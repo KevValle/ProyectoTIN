@@ -116,14 +116,14 @@
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Json Input 2</from><to>Select values 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values 2</from><to>Text file output 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>Json Input 2</from><to>Get settings</to><enabled>Y</enabled> </hop>
-  <hop> <from>Get settings</from><to>Select values</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>Proyectos</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Salida de Proyectos</to><enabled>Y</enabled> </hop>
+  <hop> <from>Proyectos</from><to>Propiedades</to><enabled>Y</enabled> </hop>
+  <hop> <from>Propiedades</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Salida de propiedades</to><enabled>Y</enabled> </hop>
   </order>
   <step>
-    <name>Get settings</name>
+    <name>Propiedades</name>
     <type>JsonInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -252,7 +252,7 @@
     </step>
 
   <step>
-    <name>Json Input 2</name>
+    <name>Proyectos</name>
     <type>JsonInput</type>
     <description/>
     <distribute>N</distribute>
@@ -274,7 +274,7 @@
     <defaultPathLeafToNull>N</defaultPathLeafToNull>
     <rownum_field/>
     <file>
-      <name>&#x2f;home&#x2f;kevin&#x2f;Proyectos.js</name>
+      <name>&#x2f;home&#x2f;kevin&#x2f;Origen&#x2f;Proyectos.js</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -528,7 +528,8 @@
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
-    </fields>     <cluster_schema/>
+      <remove>        <name>settings</name>
+      </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>432</xloc>
       <yloc>128</yloc>
@@ -537,7 +538,7 @@
     </step>
 
   <step>
-    <name>Text file output</name>
+    <name>Salida de propiedades</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -561,7 +562,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>&#x2f;home&#x2f;kevin&#x2f;JSON Settings</name>
+      <name>&#x2f;home&#x2f;kevin&#x2f;Procesados&#x2f;PropiedadesProcesados</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -661,7 +662,7 @@
     </step>
 
   <step>
-    <name>Text file output 2</name>
+    <name>Salida de Proyectos</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -685,7 +686,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>&#x2f;home&#x2f;kevin&#x2f;JSON Obtenido</name>
+      <name>&#x2f;home&#x2f;kevin&#x2f;Procesados&#x2f;Proyectos</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -741,18 +742,6 @@
       </field>
       <field>
         <name>type</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>settings</name>
         <type>String</type>
         <format/>
         <currency/>
