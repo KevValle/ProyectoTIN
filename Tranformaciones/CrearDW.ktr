@@ -140,7 +140,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;bloque&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;bloque&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;userid&#x60; int&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;proyectid&#x60; int&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;type&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;bloque&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;bloque&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;userid&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;proyectid&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;type&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -172,7 +172,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;categoriacomponentes&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;categoriacomponentes&#x60; &#x28;&#xd;&#xa;  &#x60;componente&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;categoria&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  PRIMARY KEY&#x28;&#x60;componente&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;categoriacomponentes&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;categoriacomponentes&#x60; &#x28;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;componente&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;categoria&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  PRIMARY KEY&#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -204,7 +204,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;componente&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;componente&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;userid&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;projectid&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;screenname&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;type&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;componente&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;componente&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;userid&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;projectid&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;screenname&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;type&#x60; int&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -236,7 +236,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;numbloques&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;numbloques&#x60; &#x28;&#xd;&#xa;  &#x60;screenid&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  &#x60;projectid&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  &#x60;blocktype&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  &#x60;numblocks&#x60; int&#x28;10&#x29; NOT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;screenid&#x60;,&#x60;projectid&#x60;,&#x60;blocktype&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;numbloques&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;numbloques&#x60; &#x28;&#xd;&#xa;  &#x60;screenid&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  &#x60;blocktype&#x60; varchar&#x28;30&#x29; NOT NULL,&#xd;&#xa;  &#x60;numblocks&#x60; int&#x28;10&#x29; NOT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;screenid&#x60;,&#x60;blocktype&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -300,7 +300,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;pantalla&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;pantalla&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;userid&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;projectid&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;pantalla&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;pantalla&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;userid&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;projectid&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xa;  &#x60;type&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -332,7 +332,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;proyecto&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;proyecto&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;appname&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versioncode&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versionname&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;proyecto&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;proyecto&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;appname&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versioncode&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versionname&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -364,7 +364,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;numcomponentes&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;numcomponentes&#x60; &#x28;&#xd;&#xa;  &#x60;screenid&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;projectid&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;componenttype&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;componentcategory&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;numcomponents&#x60; int&#x28;10&#x29; NOT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;screenid&#x60;,&#x60;projectid&#x60;,&#x60;componenttype&#x60;,&#x60;componentcategory&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;numcomponentes&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;numcomponentes&#x60; &#x28;&#xd;&#xa;  &#x60;screenid&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;componenttype&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;componentcategory&#x60; varchar&#x28;30&#x29;,&#xd;&#xa;  &#x60;numcomponents&#x60; int&#x28;10&#x29; NOT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;screenid&#x60;,&#x60;componenttype&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -428,7 +428,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;usuario&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;usuario&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;email&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;usuario&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;usuario&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;email&#x60; varchar&#x28;50&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
