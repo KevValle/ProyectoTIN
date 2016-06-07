@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="QueryUsuarios" type="sql.jndi">
+         <Jndi>proyectotin</Jndi>
+      </Connection>
+      <Connection id="QueryTotal" type="mondrian.jndi">
+         <Catalog>mondrian:/Cubo_1</Catalog>
+         <Jndi>proyectotin</Jndi>
+      </Connection>
+      <Connection id="QueryElementos" type="mondrian.jndi">
+         <Catalog>mondrian:/Cubo_1</Catalog>
+         <Jndi>proyectotin</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="QueryUsuarios" id="QueryUsuarios" type="sql">
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select email from usuario]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="QueryTotal" id="QueryTotal" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="param_usuario" name="param_usuario" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [~ROWS] AS
+    {[Usuario.Email].[${param_usuario}]}
+SELECT
+NON EMPTY {[Measures].[Bloques], [Measures].[Pantallas], [Measures].[Componentes]} ON COLUMNS,
+NON EMPTY [~ROWS] ON ROWS
+FROM [Cubo_1]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="QueryElementos" id="QueryElementos" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="param_usuario" name="param_usuario" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [~FILTER] AS
+    {[Usuario.Email].[${param_usuario}]}
+SET [~ROWS] AS
+    {[Proyecto.Name].[Name].Members}
+SELECT
+NON EMPTY {[Measures].[Bloques], [Measures].[Pantallas], [Measures].[Componentes]} ON COLUMNS,
+NON EMPTY [~ROWS] ON ROWS
+FROM [Cubo_1]
+WHERE [~FILTER]]]></Query>
+   </DataAccess>
+</CDADescriptor>
