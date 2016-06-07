@@ -366,7 +366,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DROP TABLE IF EXISTS &#x60;proyecto&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;proyecto&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;appname&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versioncode&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versionname&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
+    <sql>DROP TABLE IF EXISTS &#x60;proyecto&#x60;&#x3b;&#xd;&#xa;CREATE TABLE &#x60;proyecto&#x60; &#x28;&#xd;&#xa;  &#x60;id&#x60; int&#x28;30&#x29; AUTO_INCREMENT,&#xd;&#xa;  &#x60;id_nk&#x60; varchar&#x28;30&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;name&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;appname&#x60; varchar&#x28;100&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versioncode&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  &#x60;versionname&#x60; double&#x28;4,2&#x29; DEFAULT NULL,&#xd;&#xa;  PRIMARY KEY &#x28;&#x60;id&#x60;&#x29;&#xd;&#xa;&#x29; ENGINE&#x3d;InnoDB DEFAULT CHARSET&#x3d;latin1&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -709,29 +709,6 @@
     </step>
 
   <step>
-    <name>Tabla usuarioproyecto</name>
-    <type>TableExists</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <connection>Proyecto TIN</connection>
-    <tablenamefield>usuarioproyecto</tablenamefield>
-    <resultfieldname>usuarioproyecto_res</resultfieldname>
-    <schemaname/>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1232</xloc>
-      <yloc>32</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>Tabla componente</name>
     <type>TableExists</type>
     <description/>
@@ -915,6 +892,29 @@
       </GUI>
     </step>
 
+  <step>
+    <name>Tabla usuarioproyecto</name>
+    <type>TableExists</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Proyecto TIN</connection>
+    <tablenamefield>usuarioproyecto</tablenamefield>
+    <resultfieldname>usuarioproyecto_res</resultfieldname>
+    <schemaname/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1232</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step_error_handling>
       <error>
         <source_step>Tabla bloque</source_step>
@@ -931,18 +931,6 @@
       <error>
         <source_step>Tabla categoria componente</source_step>
         <target_step>Crear categoria componente</target_step>
-        <is_enabled>Y</is_enabled>
-        <nr_valuename/>
-        <descriptions_valuename/>
-        <fields_valuename/>
-        <codes_valuename/>
-        <max_errors/>
-        <max_pct_errors/>
-        <min_pct_rows/>
-      </error>
-      <error>
-        <source_step>Tabla usuarioproyecto</source_step>
-        <target_step>Crear categoria componente 2</target_step>
         <is_enabled>Y</is_enabled>
         <nr_valuename/>
         <descriptions_valuename/>
@@ -1039,6 +1027,18 @@
       <error>
         <source_step>Tabla usuario</source_step>
         <target_step>Crear usuario</target_step>
+        <is_enabled>Y</is_enabled>
+        <nr_valuename/>
+        <descriptions_valuename/>
+        <fields_valuename/>
+        <codes_valuename/>
+        <max_errors/>
+        <max_pct_errors/>
+        <min_pct_rows/>
+      </error>
+      <error>
+        <source_step>Tabla usuarioproyecto</source_step>
+        <target_step>Crear categoria componente 2</target_step>
         <is_enabled>Y</is_enabled>
         <nr_valuename/>
         <descriptions_valuename/>

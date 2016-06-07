@@ -439,7 +439,7 @@
       <field>
         <name>id</name>
         <path>&#x24;..id</path>
-        <type>Number</type>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
