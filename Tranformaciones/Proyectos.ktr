@@ -244,7 +244,7 @@
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>656</xloc>
+      <xloc>736</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
       </GUI>
@@ -271,7 +271,7 @@
     </keys>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>528</xloc>
+      <xloc>608</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
       </GUI>

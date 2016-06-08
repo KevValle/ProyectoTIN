@@ -1332,7 +1332,7 @@
    }
   ]
  },
- "filename": "/public/Plantilla_CDE.cdfde",
+ "filename": "/public/Descarga/Plantilla_CDE.cdfde",
  "layout": {
   "rows": [
    {
@@ -1645,7 +1645,7 @@
      {
       "name": "backgroundColor",
       "type": "Color",
-      "value": "#005ac7"
+      "value": "#a4c639"
      },
      {
       "name": "roundCorners",
@@ -2304,6 +2304,163 @@
     ],
     "type": "LayoutRow",
     "typeDesc": "Row"
+   },
+   {
+    "id": "946e923e-ceec-a953-0675-8ee692cdb0cc",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutSpace",
+    "typeDesc": "Space"
+   },
+   {
+    "id": "3ebbf0a5-478d-45d5-0cbb-7b07c1797117",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
+   },
+   {
+    "id": "f8c8274a-13fd-4524-30aa-08e8df50546a",
+    "parent": "3ebbf0a5-478d-45d5-0cbb-7b07c1797117",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "12"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
+   },
+   {
+    "id": "32ad2340-3471-3d5b-d640-0430106a7a33",
+    "parent": "f8c8274a-13fd-4524-30aa-08e8df50546a",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "Botones"
+     },
+     {
+      "name": "html",
+      "type": "Html",
+      "value": "<a href=\"http://localhost:8080/pentaho/api/repos/%3Apublic%3ADescarga%3ACDE_Expo_2_Completo.wcdf/generatedContent\" style=\"width: 200px; height: 40px; padding:5px; border-radius:10px; float:left; text-align:center; color: #FFF; background-color: #a4c639;\">Información de proyectos</a>\n<!--<a href=\"www.uca.es\" style=\"width: 200px; height: 40px; padding:5px; border-radius:10px; float:right; text-align: center; color: #FFF; background-color: #a4c639;\">Informe de usuario</a> -->\n "
+     },
+     {
+      "name": "fontSize",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "color",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
    },
    {
     "id": "8e6fffe6-266d-9b38-9880-8bd3fbc10e7d",
