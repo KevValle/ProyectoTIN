@@ -1,4 +1,0 @@
-#|
-$JSON
-{"YaVersion":"130","Source":"Form","Properties":{"$Name":"Screen1","$Type":"Form","$Version":"16","AppName":"ProyectoTest1","Title":"Screen1","Uuid":"0","$Components":[{"$Name":"Button1","$Type":"Button","$Version":"6","ComponentName":"Button1","Text":"Text for Button1","Uuid":"-599735207"},{"$Name":"Label1","$Type":"Label","$Version":"3","ComponentName":"Label1","Text":"Text for Label1","Uuid":"1798244298"},{"$Name":"Canvas1","$Type":"Canvas","$Version":"10","ComponentName":"Canvas1","Uuid":"2030221462"},{"$Name":"Camera1","$Type":"Camera","$Version":"2","Uuid":"-481944397"},{"$Name":"TinyDB1","$Type":"TinyDB","$Version":"1","ComponentName":"TinyDB1","Uuid":"-979958387"},{"$Name":"FusiontablesControl1","$Type":"FusiontablesControl","$Version":"3","ComponentName":"FusiontablesControl1","Uuid":"-1084191259"},{"$Name":"LocationSensor1","$Type":"LocationSensor","$Version":"2","ComponentName":"LocationSensor1","Uuid":"-1122456366"}]}}
-|#
