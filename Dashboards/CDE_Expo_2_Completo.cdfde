@@ -612,7 +612,7 @@
      {
       "name": "title",
       "type": "String",
-      "value": "Total de Bloques"
+      "value": "Total de Pantallas"
      },
      {
       "name": "listeners",
@@ -4870,160 +4870,160 @@
    },
    {
     "id": "c9f97a58-6590-c176-8e74-344c4b54114d",
-    "type": "LayoutSpace",
-    "typeDesc": "Space",
     "parent": "UnIqEiD",
     "properties": [
      {
       "name": "height",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutSpace",
+    "typeDesc": "Space"
    },
    {
     "id": "51a69cf8-f270-eead-46f7-13121840d3c9",
-    "type": "LayoutRow",
-    "typeDesc": "Row",
     "parent": "UnIqEiD",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "height",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
    },
    {
     "id": "b3ec3209-8de4-b192-80b5-c19d7da6f816",
-    "type": "LayoutBootstrapColumn",
-    "typeDesc": "Column",
     "parent": "51a69cf8-f270-eead-46f7-13121840d3c9",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "bootstrapExtraSmall",
-      "value": "12",
-      "type": "String"
+      "type": "String",
+      "value": "12"
      },
      {
       "name": "bootstrapSmall",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapMedium",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapLarge",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapCssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "height",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
    },
    {
     "id": "709c5acf-cb7e-da02-4db4-eb3c2309aab8",
-    "type": "LayoutHtml",
-    "typeDesc": "Html",
     "parent": "b3ec3209-8de4-b192-80b5-c19d7da6f816",
     "properties": [
      {
       "name": "name",
-      "value": "Botones",
-      "type": "Id"
+      "type": "Id",
+      "value": "Botones"
      },
      {
       "name": "html",
-      "value": "<a href=\"http://localhost:8080/pentaho/api/repos/%3Apublic%3APlantilla_CDE.wcdf/generatedContent\" style=\"width: 200px; height: 40px; padding:5px; border-radius:10px; float:left; text-align:center; color: #FFF; background-color: #a4c639;\">Información de usuarios</a>\n ",
-      "type": "Html"
+      "type": "Html",
+      "value": "<a href=\"http://localhost:8080/pentaho/api/repos/%3Apublic%3APlantilla_CDE.wcdf/generatedContent\" style=\"width: 200px; height: 40px; padding:5px; border-radius:10px; float:left; text-align:center; color: #FFF; background-color: #a4c639;\">Información de usuarios</a>\n "
      },
      {
       "name": "fontSize",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "color",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
    },
    {
     "id": "8e6fffe6-266d-9b38-9880-8bd3fbc10e7d",
